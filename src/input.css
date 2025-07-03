@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap");
+
+@theme {
+
+    --font-main:  Archivo, sans-serif;
+
+    --color-dark-blue: #011826;
+    --color-medium-blue: #042940;
+    --color-light-blue: #3E6E8C;
+    --color-extra-light-blue: #8AB0BF;
+    --color-primary-white: #FFFFFF;
+    --color-secondary-white: #FAFAFA;
+    --color-tertiary-white: #EBEFF2;
+    --color-primary-gray: #595959;
+    --color-secondary-gray: oklch(0.35 0.006 267.46 / 0.4);
+
+}

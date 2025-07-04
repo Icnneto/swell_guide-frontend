@@ -9,12 +9,39 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-     <link href="./public/css/output.css" rel="stylesheet" />
+    <link href="./public/css/output.css" rel="stylesheet" />
 </head>
 
-<body class="font-main">
-    <header>
-        <nav></nav>
+<body class="font-main bg-primary-white">
+    <header class="relative bg-[url(../../public/assets/header_image.png)] bg-cover bg-center h-[65vh] lg:h-screen">
+        <div class="absolute inset-0 bg-primary-gray opacity-50"></div>
+
+        <div class="relative z-10 flex flex-col items-center text-center justify-center h-full text-secondary-white">
+            <nav class="absolute top-3 w-4/5 py-4 px-6 flex flex-row items-center
+                justify-between bg-secondary-white/10 backdrop-blur-sm bg-opacity-100 backdrop-saturate-100 rounded-4xl">
+                <a href="index.html">
+                    <img src="./public/assets/logo_white.svg" class="w-3/5">
+                </a>
+                <a href="" class="px-4 py-2 font-medium text-xs lg:text-sm bg-dark-blue rounded-2xl text-secondary-white
+                    lg:hover:bg-primary-white lg:hover:text-dark-blue lg:duration-900">
+                    Inscreva-se
+                </a>
+                <!-- <a href="" class="bg-gradient-to-r from-dark-blue to-medium-blue rounded-4xl text-center 
+                    text-secondary-white text-xs font-medium py-3 lg:text-base lg:hover:bg-gradient-to-r 
+                    lg:hover:from-dark-blue/70 lg:hover:to-medium-blue/70 lg:duration-900">
+                    inscreva-se
+                </a> -->
+            </nav>
+
+            <div class="text-center">
+                <h1 class="text-3xl lg:text-6xl font-semibold">Sem decifrar gráficos.</h1>
+                <h2 class="text-3xl lg:text-6xl font-semibold">Entenda o mar de verdade</h2>
+                <p class="text-base lg:text-xl font-light mt-4 max-w-3xl px-3">
+                    A SwellGuide envia para você, todos os dias, a previsão do mar para Florianópolis de forma simples e
+                    direta. Sem jargão técnico, <span class="font-medium">sem complicação.</span>
+                </p>
+            </div>
+        </div>
     </header>
 
     <main></main>

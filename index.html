@@ -13,7 +13,7 @@
 </head>
 
 <body class="font-main bg-primary-white">
-    <header class="relative bg-[url(../../public/assets/header_image.png)] bg-cover bg-center h-[65vh] lg:h-screen">
+    <header class="relative bg-[url(../../public/assets/header_image.png)] bg-cover bg-center h-[65vh] lg:h-[100vh]">
         <div class="absolute inset-0 bg-primary-gray opacity-50"></div>
 
         <div class="relative z-10 flex flex-col items-center text-center justify-center h-full text-secondary-white">
@@ -39,9 +39,36 @@
         </div>
     </header>
 
-    <main></main>
+    <main class="flex flex-col gap-y-24 my-16 mx-24">
+        
+        <!-- SEÇÃO - DOR -->
+
+        <!-- Inserir pop ups -->
+        <section class="flex flex-col items-center text-center justify-center mx-64 h-screen">
+            <h1 class="text-secondary-gray lg:font-bold lg:text-7xl">
+                Sua previsão deveria ser uma aliada, 
+                <span class="text-primary-gray">não um quebra-cabeça.</span>
+            </h1>
+        </section>
+
+        <!-- SEÇÃO - PROPÓSITO -->
+        <section class="grid grid-cols-3 text-left lg:h-[50vh]">
+            <div class="col-span-2">
+                <img src="/public/assets/wavy_icon.svg" class="w-[5%] pb-2">
+                <h1 class="text-primary-gray lg:font-semibold lg:text-5xl lg:py-2">
+                    A SwellGuide traduz o mar para você
+                </h1>
+                <p class="text-secondary-gray lg:font-medium lg:text-3xl">
+                    Nós analisamos múltiplas fontes de dados de vento e ondulação e transformamos tudo isso em uma análise clara e objetiva.
+                </p>
+            </div>
+            
+        </section>
+
+    </main>
 
     <footer></footer>
 </body>
 
 </html>
+

@@ -17,7 +17,8 @@
         <div class="absolute inset-0 bg-primary-gray opacity-50"></div>
 
         <div class="relative z-10 flex flex-col items-center text-center justify-center h-full text-secondary-white">
-            <nav class="absolute top-3 w-4/5 py-4 px-6 flex flex-row items-center
+            <nav
+                class="absolute top-3 w-4/5 py-4 px-6 flex flex-row items-center
                 justify-between bg-secondary-white/10 backdrop-blur-sm bg-opacity-100 backdrop-saturate-100 rounded-4xl">
                 <a href="index.html">
                     <img src="./public/assets/logo_white.svg" class="w-3/5">
@@ -40,29 +41,92 @@
     </header>
 
     <main class="flex flex-col gap-y-24 my-16 mx-24">
-        
+
         <!-- SEÇÃO - DOR -->
 
         <!-- Inserir pop ups -->
         <section class="flex flex-col items-center text-center justify-center mx-64 h-screen">
             <h1 class="text-secondary-gray lg:font-bold lg:text-7xl">
-                Sua previsão deveria ser uma aliada, 
+                Sua previsão deveria ser uma aliada,
                 <span class="text-primary-gray">não um quebra-cabeça.</span>
             </h1>
         </section>
 
         <!-- SEÇÃO - PROPÓSITO -->
         <section class="grid grid-cols-3 text-left lg:h-[50vh]">
-            <div class="col-span-2">
+            <div class="col-span-2 h-screen">
                 <img src="/public/assets/wavy_icon.svg" class="w-[5%] pb-2">
                 <h1 class="text-primary-gray lg:font-semibold lg:text-5xl lg:py-2">
                     A SwellGuide traduz o mar para você
                 </h1>
                 <p class="text-secondary-gray lg:font-medium lg:text-3xl">
-                    Nós analisamos múltiplas fontes de dados de vento e ondulação e transformamos tudo isso em uma análise clara e objetiva.
+                    Nós analisamos múltiplas fontes de dados de vento e ondulação e transformamos tudo isso em uma
+                    análise clara e objetiva.
                 </p>
             </div>
-            
+        </section>
+
+        <!-- SEÇÃO - COMO -->
+        <section class="flex flex-col gap-y-16 items-center h-screen">
+            <h3 class="text-primary-gray font-light text-4xl">como funciona?</h3>
+
+            <div class="flex flex-row gap-x-8">
+
+                <div class="w-86 h-100 bg-primary-white shadow-xl py-6 px-6 flex flex-col gap-6 rounded-2xl">
+                    <div class="h-48 bg-gray-700 rounded-xl"></div>
+                    <div class="flex flex-col gap-4">
+                        <span class="text-2xl text-primary-gray font-light">Faça sua inscrição</span>
+                        <p class="text-xl text-secondary-gray font-extralight">Deixe seu melhor e-mail e entre para a
+                            comunidade SwellGuide
+                        </p>
+                    </div>
+                </div>
+
+                <div class="w-86 h-100 bg-primary-white shadow-xl py-6 px-6 flex flex-col gap-6 rounded-2xl">
+                    <div class="h-48 bg-gray-700 rounded-xl"></div>
+                    <div class="flex flex-col gap-4">
+                        <span class="text-2xl text-primary-gray font-light">Receba previsões claras</span>
+                        <p class="text-xl text-secondary-gray font-extralight">A análise do mar de Floripa, clara e
+                            objetiva, entregue direto no seu e-mail.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="w-86 h-100 bg-primary-white shadow-xl py-6 px-6 flex flex-col gap-6 rounded-2xl">
+                    <div class="h-48 bg-gray-700 rounded-xl"></div>
+                    <div class="flex flex-col gap-4">
+                        <span class="text-2xl text-primary-gray font-light">Planeje a session</span>
+                        <p class="text-xl text-secondary-gray font-extralight">Leia nossa análise em minutos e saiba
+                            exatamente onde encontrar as melhores ondas do dia
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SEÇÃO - JORNADA -->
+        <section class="grid grid-cols-3 text-left lg:h-[50vh]">
+            <div class="col-span-2">
+                <img src="/public/assets/wavy_icon.svg" class="w-[5%] pb-2">
+                <h1 class="text-primary-gray lg:font-semibold lg:text-5xl lg:py-2">
+                    Florianópolis
+                </h1>
+                <h3 class="text-secondary-gray lg:font-semibold lg:text-4xl pb-6">
+                    Santa Catarina
+                </h3>
+                <p class="text-secondary-gray lg:font-light lg:text-3xl pb-4">
+                    Nossa jornada começa em casa, na Ilha da Magia, com a missão de <span
+                        class="text-primary-gray lg:font:medium">entregar uma previsão que realmente faça a diferença no
+                        seu dia.</span>
+                </p>
+                <p class="text-secondary-gray lg:font-light lg:text-3xl">
+                    Este é só o começo da nossa história! <span class="text-primary-gray lg:font:medium">Temos como
+                        plano levar previsões claras e úteis para todo o litoral brasileiro.</span>
+                    Já estamos de olho nos próximos picos, então fique atento!
+                </p>
+            </div>
+
         </section>
 
     </main>
@@ -71,4 +135,3 @@
 </body>
 
 </html>
-

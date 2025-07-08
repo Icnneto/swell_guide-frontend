@@ -70,10 +70,17 @@
         <section class="flex flex-col gap-y-16 items-center h-screen">
             <h3 class="text-primary-gray font-light text-4xl">como funciona?</h3>
 
-            <div class="flex flex-row gap-x-8">
+            <!-- PARA MOBILE FAZER CARROUSSEL -->
+            <div class="flex flex-col gap-y-8 lg:flex-row lg:justify-around lg:gap-x-8">
 
                 <div class="w-86 h-100 bg-primary-white shadow-xl py-6 px-6 flex flex-col gap-6 rounded-2xl">
-                    <div class="h-48 bg-gray-700 rounded-xl"></div>
+                    <div
+                        class="relative h-48 rounded-xl bg-[url(../../public/assets/pico_da_cruz-card.jpg)] overflow-hidden bg-cover bg-center">
+                        <div class="absolute inset-0 bg-primary-gray opacity-25"></div>
+                        <h1
+                            class="absolute text-primary-white font-light text-[240px] leading-none bottom-[-74px] left-1">
+                            1</h1>
+                    </div>
                     <div class="flex flex-col gap-4">
                         <span class="text-2xl text-primary-gray font-light">Faça sua inscrição</span>
                         <p class="text-xl text-secondary-gray font-extralight">Deixe seu melhor e-mail e entre para a
@@ -83,17 +90,29 @@
                 </div>
 
                 <div class="w-86 h-100 bg-primary-white shadow-xl py-6 px-6 flex flex-col gap-6 rounded-2xl">
-                    <div class="h-48 bg-gray-700 rounded-xl"></div>
+                    <div
+                        class="relative h-48 rounded-xl bg-[url(../../public/assets/joaquina-card.jpg)] overflow-hidden bg-cover bg-center">
+                        <div class="absolute inset-0 bg-primary-gray opacity-25"></div>
+                        <h1
+                            class="absolute text-primary-white font-light text-[240px] leading-none bottom-[-74px] left-1">
+                            2</h1>
+                    </div>
                     <div class="flex flex-col gap-4">
                         <span class="text-2xl text-primary-gray font-light">Receba previsões claras</span>
                         <p class="text-xl text-secondary-gray font-extralight">A análise do mar de Floripa, clara e
-                            objetiva, entregue direto no seu e-mail.
+                            objetiva, entregue direto no seu e-mail
                         </p>
                     </div>
                 </div>
 
                 <div class="w-86 h-100 bg-primary-white shadow-xl py-6 px-6 flex flex-col gap-6 rounded-2xl">
-                    <div class="h-48 bg-gray-700 rounded-xl"></div>
+                    <div
+                        class="relative h-48 rounded-xl bg-[url(../../public/assets/header_image.png)] overflow-hidden bg-cover bg-center">
+                        <div class="absolute inset-0 bg-primary-gray opacity-25"></div>
+                        <h1
+                            class="absolute text-primary-white font-light text-[240px] leading-none bottom-[-74px] left-1">
+                            3</h1>
+                    </div>
                     <div class="flex flex-col gap-4">
                         <span class="text-2xl text-primary-gray font-light">Planeje a session</span>
                         <p class="text-xl text-secondary-gray font-extralight">Leia nossa análise em minutos e saiba
@@ -101,7 +120,6 @@
                         </p>
                     </div>
                 </div>
-
             </div>
         </section>
 

@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <link href="./public/css/output.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="./public/assets/wavy_icon.svg" />
 </head>
 
 <body class="font-main bg-primary-white">
@@ -18,12 +19,12 @@
 
         <div class="relative z-10 flex flex-col items-center text-center justify-center h-full text-secondary-white">
             <nav
-                class="absolute top-3 w-4/5 py-4 px-6 flex flex-row items-center
-                justify-between bg-secondary-white/10 backdrop-blur-sm bg-opacity-100 backdrop-saturate-100 rounded-4xl">
+                class="absolute top-6 lg:top-3 w-[95%] lg:w-4/5 py-2 px-4 lg:py-4 lg:px-6 flex flex-row items-center
+                justify-between bg-secondary-white/10 backdrop-blur-sm bg-opacity-100 backdrop-saturate-100 rounded-2xl lg:rounded-4xl">
                 <a href="index.html">
-                    <img src="./public/assets/logo_white.svg" class="w-3/5">
+                    <img src="./public/assets/logo_white.svg" class="w-2/5 lg:w-3/5">
                 </a>
-                <a href="" class="px-4 py-2 font-medium text-xs lg:text-sm bg-dark-blue rounded-2xl text-secondary-white
+                <a href="" class="hidden lg:block lg:px-4 lg:py-2 font-medium text-xs lg:text-sm bg-dark-blue rounded-2xl text-secondary-white
                     lg:hover:bg-primary-white lg:hover:text-dark-blue lg:duration-900">
                     Inscreva-se
                 </a>
@@ -40,26 +41,26 @@
         </div>
     </header>
 
-    <main class="flex flex-col gap-y-24 my-16 mx-24">
+    <main class="flex flex-col gap-y-24 my-4 mx-8 lg:mx-24">
 
         <!-- SEÇÃO - DOR -->
 
         <!-- Inserir pop ups -->
-        <section class="flex flex-col items-center text-center justify-center mx-64 h-screen">
-            <h1 class="text-secondary-gray lg:font-bold lg:text-7xl">
+        <section class="flex flex-col items-center text-center justify-center lg:mx-64 h-[45vh] lg:h-screen">
+            <h1 class="text-secondary-gray text-3xl lg:text-7xl lg:font-bold">
                 Sua previsão deveria ser uma aliada,
                 <span class="text-primary-gray">não um quebra-cabeça.</span>
             </h1>
         </section>
 
         <!-- SEÇÃO - PROPÓSITO -->
-        <section class="grid grid-cols-3 text-left lg:h-[50vh]">
-            <div class="col-span-2 h-screen">
-                <img src="/public/assets/wavy_icon.svg" class="w-[5%] pb-2">
-                <h1 class="text-primary-gray lg:font-semibold lg:text-5xl lg:py-2">
+        <section class="grid grid-cols-3 text-left h-[45vh] lg:h-[50vh]">
+            <div class="col-span-3 lg:col-span-2">
+                <img src="/public/assets/wavy_icon.svg" class="w-[12%] lg:w-[5%] pb-4 lg:pb-2">
+                <h1 class="text-primary-gray font-semibold text-2xl lg:text-5xl py-2">
                     A SwellGuide traduz o mar para você
                 </h1>
-                <p class="text-secondary-gray lg:font-medium lg:text-3xl">
+                <p class="text-secondary-gray font-medium text-xl lg:text-3xl">
                     Nós analisamos múltiplas fontes de dados de vento e ondulação e transformamos tudo isso em uma
                     análise clara e objetiva.
                 </p>
@@ -67,13 +68,12 @@
         </section>
 
         <!-- SEÇÃO - COMO -->
-        <section class="flex flex-col gap-y-16 items-center h-screen">
-            <h3 class="text-primary-gray font-light text-4xl">como funciona?</h3>
+        <section class="flex flex-col gap-y-16 items-center h-full lg:h-screen">
+            <h3 class="text-primary-gray font-light text-2xl lg:text-4xl">como funciona?</h3>
 
-            <!-- PARA MOBILE FAZER CARROUSSEL -->
-            <div class="flex flex-col gap-y-8 lg:flex-row lg:justify-around lg:gap-x-8">
+            <div class="flex flex-col gap-y-8 lg:flex-row justify-around lg:gap-x-8">
 
-                <div class="w-86 h-100 bg-primary-white shadow-xl py-6 px-6 flex flex-col gap-6 rounded-2xl">
+                <div class="w-86 h-100 bg-primary-white shadow-xl p-6 flex flex-col gap-6 rounded-2xl">
                     <div
                         class="relative h-48 rounded-xl bg-[url(../../public/assets/pico_da_cruz-card.jpg)] overflow-hidden bg-cover bg-center">
                         <div class="absolute inset-0 bg-primary-gray opacity-25"></div>
@@ -124,32 +124,73 @@
         </section>
 
         <!-- SEÇÃO - JORNADA -->
-        <section class="grid grid-cols-3 text-left lg:h-[50vh]">
-            <div class="col-span-2">
-                <img src="/public/assets/wavy_icon.svg" class="w-[5%] pb-2">
-                <h1 class="text-primary-gray lg:font-semibold lg:text-5xl lg:py-2">
+        <section class="grid grid-cols-3 text-left h-[55vh] lg:h-[50vh]">
+            <div class="col-span-3 lg:col-span-2">
+                <img src="/public/assets/wavy_icon.svg" class="w-[12%] lg:w-[5%] pb-4 lg:pb-2">
+                <h1 class="text-primary-gray font-semibold text-2xl lg:text-5xl py-2">
                     Florianópolis
                 </h1>
-                <h3 class="text-secondary-gray lg:font-semibold lg:text-4xl pb-6">
+                <h3 class="text-secondary-gray font-semibold text-xl lg:text-4xl pb-6">
                     Santa Catarina
                 </h3>
-                <p class="text-secondary-gray lg:font-light lg:text-3xl pb-4">
+                <p class="text-secondary-gray font-light text-lg lg:text-3xl pb-4">
                     Nossa jornada começa em casa, na Ilha da Magia, com a missão de <span
-                        class="text-primary-gray lg:font:medium">entregar uma previsão que realmente faça a diferença no
+                        class="text-primary-gray font:medium">entregar uma previsão que realmente faça a diferença no
                         seu dia.</span>
                 </p>
-                <p class="text-secondary-gray lg:font-light lg:text-3xl">
-                    Este é só o começo da nossa história! <span class="text-primary-gray lg:font:medium">Temos como
+                <p class="text-secondary-gray font-light text-lg lg:text-3xl">
+                    Este é só o começo da nossa história! <span class="text-primary-gray font:medium">Temos como
                         plano levar previsões claras e úteis para todo o litoral brasileiro.</span>
                     Já estamos de olho nos próximos picos, então fique atento!
                 </p>
             </div>
-
         </section>
 
+        <!-- SEÇÃO - CTA -->
+        <section
+            class="flex flex-col justify-between text-center lg:text-left items-center lg:items-start h-[40vh] lg:h-[50vh] mt-12 lg:mt-24 bg-gradient-to-br from-extra-light-blue/15 to-extra-light-blue/25 backdrop-blur-sm bg-opacity-100 backdrop-saturate-50 rounded-2xl lg:rounded-4xl p-4 lg:p-8">
+            <div class="flex flex-col items-center lg:items-start gap-y-4 lg:gap-y-2 w-full lg:w-1/2">
+                <h1 class="text-primary-gray font-medium lg:font-light text-xl lg:text-2xl">
+                    Pronto para nunca mais perder um dia de mar perfeito?
+                </h1>
+                <h3 class="text-secondary-gray font-medium lg:font-extralight text-lg lg:text-2xl w-full lg:w-3/4">
+                    Junte-se à comunidade SwellGuide e receba as previsões que realmente fazem a diferença.
+                </h3>
+            </div>
+            <div class="w-full lg:w-1/4">
+                <a href=""
+                    class="flex justify-between gap-2 items-center mx-auto shadow-lg lg:shadow-xl text-sm bg-primary-white backdrop-blur-md
+                    lg:hover:bg-dark-blue lg:hover:text-primary-white lg:hover:border-dark-blue lg:duration-900
+                    lg:font-light isolation-auto border-primary-white px-4 py-2 overflow-hidden border-2 rounded-full group">
+                    Quero fazer parte!
+                    <svg class="w-8 h-8 justify-end group-hover:rotate-90 group-hover:bg-dark-blue text-dark-blue ease-linear duration-300 rounded-full border border-dark-blue group-hover:border-none p-2 rotate-45"
+                        viewBox="0 0 16 19" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M7 18C7 18.5523 7.44772 19 8 19C8.55228 19 9 18.5523 9 18H7ZM8.70711 0.292893C8.31658 -0.0976311 7.68342 -0.0976311 7.29289 0.292893L0.928932 6.65685C0.538408 7.04738 0.538408 7.68054 0.928932 8.07107C1.31946 8.46159 1.95262 8.46159 2.34315 8.07107L8 2.41421L13.6569 8.07107C14.0474 8.46159 14.6805 8.46159 15.0711 8.07107C15.4616 7.68054 15.4616 7.04738 15.0711 6.65685L8.70711 0.292893ZM9 18L9 1H7L7 18H9Z"
+                            class="fill-dark-blue group-hover:fill-primary-white"></path>
+                    </svg>
+                </a>
+            </div>
+        </section>
     </main>
 
-    <footer></footer>
+    <footer class="mb-8">
+        <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+            <hr class="text-extra-light-blue mb-6">
+            <div class="flex flex-col items-center text-center gap-y-4 lg:flex-row lg:justify-between lg:items-center">
+                <img src="/public/assets/logo.svg" class="h-8" alt="Swellguide Logo" />
+                <ul
+                    class="flex flex-col lg:flex-row lg:items-center mb-2 gap-y-2 lg:mb-6 text-sm font-medium text-secondary-gray">
+                    <li>
+                        <a href="#" class="hover:underline me-4 md:me-6">© SweelGuide 2025</a>
+                    </li>
+                    <li>
+                        <p class="">swellguide@swellguide.com.br</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>

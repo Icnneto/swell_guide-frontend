@@ -10,11 +10,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <link href="./public/css/output.css" rel="stylesheet" />
+    <link href="./public/css/vanilla.css" rel="stylesheet" />
     <link rel="icon" type="image/x-icon" href="./public/assets/wavy_icon.svg" />
 </head>
 
 <body class="font-main bg-primary-white">
-    <header class="relative bg-[url(../../public/assets/header_image.png)] bg-cover bg-center h-[65vh] lg:h-[100vh]">
+    <header class="relative bg-[url(../../public/assets/header_image.png)] bg-cover bg-center bg-fixed h-[65vh] lg:h-[100vh]">
         <div data-subscription class="absolute inset-0 bg-primary-gray opacity-50"></div>
 
         <div class="relative z-10 flex flex-col items-center text-center justify-center h-full text-secondary-white">
@@ -91,11 +92,11 @@
         <!-- SEÇÃO - PROPÓSITO -->
         <section class="grid grid-cols-3 text-left h-[45vh] lg:h-[50vh]">
             <div class="col-span-3 lg:col-span-2">
-                <img src="/public/assets/wavy_icon.svg" class="w-[12%] lg:w-[5%] pb-4 lg:pb-2">
-                <h1 class="text-primary-gray font-semibold text-2xl lg:text-5xl py-2">
+                <img src="/public/assets/wavy_icon.svg" class="w-[12%] lg:w-[5%] pb-4 lg:pb-2" data-anime="left">
+                <h1 class="text-primary-gray font-semibold text-2xl lg:text-5xl py-2" data-anime="left">
                     A SwellGuide traduz o mar para você
                 </h1>
-                <p class="text-secondary-gray font-medium text-xl lg:text-3xl">
+                <p class="text-secondary-gray font-medium text-xl lg:text-3xl" data-anime="left">
                     Nós analisamos múltiplas fontes de dados de vento e ondulação e transformamos tudo isso em uma
                     análise clara e objetiva.
                 </p>
@@ -108,7 +109,7 @@
 
             <div class="flex flex-col gap-y-8 lg:flex-row justify-around lg:gap-x-8">
 
-                <div class="w-86 h-100 bg-primary-white shadow-xl p-6 flex flex-col gap-6 rounded-2xl">
+                <div class="w-86 h-100 bg-primary-white shadow-xl p-6 flex flex-col gap-6 rounded-2xl" data-anime="left">
                     <div
                         class="relative h-48 rounded-xl bg-[url(../../public/assets/pico_da_cruz-card.jpg)] overflow-hidden bg-cover bg-center">
                         <div class="absolute inset-0 bg-primary-gray opacity-25"></div>
@@ -124,7 +125,7 @@
                     </div>
                 </div>
 
-                <div class="w-86 h-100 bg-primary-white shadow-xl py-6 px-6 flex flex-col gap-6 rounded-2xl">
+                <div class="w-86 h-100 bg-primary-white shadow-xl py-6 px-6 flex flex-col gap-6 rounded-2xl" data-anime="top">
                     <div
                         class="relative h-48 rounded-xl bg-[url(../../public/assets/joaquina-card.jpg)] overflow-hidden bg-cover bg-center">
                         <div class="absolute inset-0 bg-primary-gray opacity-25"></div>
@@ -140,7 +141,7 @@
                     </div>
                 </div>
 
-                <div class="w-86 h-100 bg-primary-white shadow-xl py-6 px-6 flex flex-col gap-6 rounded-2xl">
+                <div class="w-86 h-100 bg-primary-white shadow-xl py-6 px-6 flex flex-col gap-6 rounded-2xl" data-anime="right">
                     <div
                         class="relative h-48 rounded-xl bg-[url(../../public/assets/header_image.png)] overflow-hidden bg-cover bg-center">
                         <div class="absolute inset-0 bg-primary-gray opacity-25"></div>
@@ -161,19 +162,19 @@
         <!-- SEÇÃO - JORNADA -->
         <section class="grid grid-cols-3 text-left h-[55vh] lg:h-[50vh]">
             <div class="col-span-3 lg:col-span-2">
-                <img src="/public/assets/wavy_icon.svg" class="w-[12%] lg:w-[5%] pb-4 lg:pb-2">
-                <h1 class="text-primary-gray font-semibold text-2xl lg:text-5xl py-2">
+                <img src="/public/assets/wavy_icon.svg" class="w-[12%] lg:w-[5%] pb-4 lg:pb-2" data-anime="left">
+                <h1 class="text-primary-gray font-semibold text-2xl lg:text-5xl py-2" data-anime="left">
                     Florianópolis
                 </h1>
-                <h3 class="text-secondary-gray font-semibold text-xl lg:text-4xl pb-6">
+                <h3 class="text-secondary-gray font-semibold text-xl lg:text-4xl pb-6" data-anime="left">
                     Santa Catarina
                 </h3>
-                <p class="text-secondary-gray font-light text-lg lg:text-3xl pb-4">
+                <p class="text-secondary-gray font-light text-lg lg:text-3xl pb-4" data-anime="right">
                     Nossa jornada começa em casa, na Ilha da Magia, com a missão de <span
                         class="text-primary-gray font:medium">entregar uma previsão que realmente faça a diferença no
                         seu dia.</span>
                 </p>
-                <p class="text-secondary-gray font-light text-lg lg:text-3xl">
+                <p class="text-secondary-gray font-light text-lg lg:text-3xl" data-anime="right">
                     Este é só o começo da nossa história! <span class="text-primary-gray font:medium">Temos como
                         plano levar previsões claras e úteis para todo o litoral brasileiro.</span>
                     Já estamos de olho nos próximos picos, então fique atento!
@@ -209,7 +210,7 @@
         </section>
     </main>
 
-    <footer class="mb-8">
+    <footer class="">
         <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
             <hr class="text-extra-light-blue mb-6">
             <div class="flex flex-col items-center text-center gap-y-4 lg:flex-row lg:justify-between lg:items-center">
@@ -228,7 +229,8 @@
     </footer>
 
     <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
-    <script type="text/javascript">(function ($) { window.fnames = new Array(); window.ftypes = new Array(); fnames[0] = 'EMAIL'; ftypes[0] = 'email'; fnames[1] = 'FNAME'; ftypes[1] = 'text'; fnames[2] = 'LNAME'; ftypes[2] = 'text'; fnames[3] = 'RAMO'; ftypes[3] = 'radio'; }(jQuery)); var $mcj = jQuery.noConflict(true);</script>
+    <script
+        type="text/javascript">(function ($) { window.fnames = new Array(); window.ftypes = new Array(); fnames[0] = 'EMAIL'; ftypes[0] = 'email'; fnames[1] = 'FNAME'; ftypes[1] = 'text'; fnames[2] = 'LNAME'; ftypes[2] = 'text'; fnames[3] = 'RAMO'; ftypes[3] = 'radio'; }(jQuery)); var $mcj = jQuery.noConflict(true);</script>
     <script type="module" src="public/js/forms/submit.js"></script>
     <script type="module" src="public/js/forms/animate.js"></script>
     <script type="module" src="public/js/forms/errors.js"></script>

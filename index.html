@@ -15,7 +15,8 @@
 </head>
 
 <body class="font-main bg-primary-white">
-    <header class="relative bg-[url(../../public/assets/header_image.png)] bg-cover bg-center bg-fixed h-[65vh] lg:h-[100vh]">
+    <header
+        class="relative bg-[url(../../public/assets/header_image.png)] bg-cover bg-center bg-fixed h-[65vh] lg:h-[100vh]">
         <div data-subscription class="absolute inset-0 bg-primary-gray opacity-50"></div>
 
         <div class="relative z-10 flex flex-col items-center text-center justify-center h-full text-secondary-white">
@@ -82,11 +83,47 @@
         <!-- SEÇÃO - DOR -->
 
         <!-- Inserir pop ups -->
-        <section class="flex flex-col items-center text-center justify-center lg:mx-64 h-[45vh] lg:h-screen">
-            <h1 class="text-secondary-gray text-3xl lg:text-7xl lg:font-bold">
+        <section class="flex flex-col items-center text-center justify-center lg:mx-56 h-[45vh] lg:h-screen">
+            <div class="relative flex flex-row justify-between gap-x-36 overflow-visible">
+                <div data-card-dores
+                    class="hidden lg:flex opacity-0 transition-all duration-300 ease-out delay-400 cursor-pointer relative top-4 w-[45%] flex-row items-center justify-around gap-6 rounded-2xl bg-secondary-white p-4 shadow-xl">
+                    <div class="relative flex z-0 items-center justify-center h-16 w-24 rounded-full bg-green-100">
+                        <img src="./public/assets/cloud-icon.svg" class=" w-9 z-10 inset-y-0 left-0" />
+                    </div>
+                    <div class="">
+                        <h3 class="text-left text-base font-bold text-primary-gray">Gráficos complexos</h3>
+                        <p class="text-left text-sm font-semibold text-secondary-gray">Complexidade na leitura,
+                            interpretação e tomada de decisão.</p>
+                    </div>
+                </div>
+                <div data-card-dores
+                    class="hidden lg:flex opacity-0 transition-all duration-300 ease-out delay-400 cursor-pointer relative top-4 w-[45%] flex-row items-center justify-around gap-6 rounded-2xl bg-secondary-white p-4 shadow-xl">
+                    <div class="relative flex z-0 items-center justify-center h-16 w-25 rounded-full bg-green-100">
+                        <img src="./public/assets/hourglass-icon.svg" class=" w-9 z-10 inset-y-0 left-0" />
+                    </div>
+                    <div class="">
+                        <h3 class="text-left text-base font-bold text-primary-gray">Tempo perdido
+                        </h3>
+                        <p class="text-left text-sm font-semibold text-secondary-gray">Desperdício de tempo na curva de
+                            aprendizado da leitura técnica.</p>
+                    </div>
+                </div>
+            </div>
+            <h1 class="text-secondary-gray lg:px-8 text-5xl lg:text-7xl lg:font-bold">
                 Sua previsão deveria ser uma aliada,
                 <span class="text-primary-gray">não um quebra-cabeça.</span>
             </h1>
+            <div data-card-dores
+                class="opacity-0 hidden lg:flex transition-all duration-300 ease-out delay-400 cursor-pointer relative bottom-4 w-[45%] flex-row items-center justify-around gap-6 rounded-2xl bg-secondary-white p-4 shadow-xl">
+                <div class="relative flex z-0 items-center justify-center h-16 w-20 rounded-full bg-green-100">
+                    <img src="./public/assets/question-icon.svg" class=" w-9 z-10 inset-y-0 left-0" />
+                </div>
+                <div class="">
+                    <h3 class="text-left text-base font-bold text-primary-gray">Boletins desatualizados</h3>
+                    <p class="text-left text-sm font-semibold text-secondary-gray">Baixa oferta de boletins em linguagem
+                        natural e gratuitos.</p>
+                </div>
+            </div>
         </section>
 
         <!-- SEÇÃO - PROPÓSITO -->
@@ -109,7 +146,8 @@
 
             <div class="flex flex-col gap-y-8 lg:flex-row justify-around lg:gap-x-8">
 
-                <div class="w-86 h-100 bg-primary-white shadow-xl p-6 flex flex-col gap-6 rounded-2xl" data-anime="left">
+                <div class="w-86 h-100 bg-primary-white shadow-xl p-6 flex flex-col gap-6 rounded-2xl"
+                    data-anime="left">
                     <div
                         class="relative h-48 rounded-xl bg-[url(../../public/assets/pico_da_cruz-card.jpg)] overflow-hidden bg-cover bg-center">
                         <div class="absolute inset-0 bg-primary-gray opacity-25"></div>
@@ -125,7 +163,8 @@
                     </div>
                 </div>
 
-                <div class="w-86 h-100 bg-primary-white shadow-xl py-6 px-6 flex flex-col gap-6 rounded-2xl" data-anime="top">
+                <div class="w-86 h-100 bg-primary-white shadow-xl py-6 px-6 flex flex-col gap-6 rounded-2xl"
+                    data-anime="top">
                     <div
                         class="relative h-48 rounded-xl bg-[url(../../public/assets/joaquina-card.jpg)] overflow-hidden bg-cover bg-center">
                         <div class="absolute inset-0 bg-primary-gray opacity-25"></div>
@@ -141,7 +180,8 @@
                     </div>
                 </div>
 
-                <div class="w-86 h-100 bg-primary-white shadow-xl py-6 px-6 flex flex-col gap-6 rounded-2xl" data-anime="right">
+                <div class="w-86 h-100 bg-primary-white shadow-xl py-6 px-6 flex flex-col gap-6 rounded-2xl"
+                    data-anime="right">
                     <div
                         class="relative h-48 rounded-xl bg-[url(../../public/assets/header_image.png)] overflow-hidden bg-cover bg-center">
                         <div class="absolute inset-0 bg-primary-gray opacity-25"></div>

@@ -37,3 +37,20 @@ animeScroll();
 window.addEventListener('scroll', () => {
   animeScroll();
 })
+
+// animação para pop dos cards
+document.addEventListener('DOMContentLoaded', function () {
+  const cardsDores = document.querySelectorAll('[data-card-dores]');
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.remove('opacity-0');
+        };
+      });
+    },
+    { threshold: 0.3 }
+  );
+  cardsDores.forEach((card) => observer.observe(card));
+})

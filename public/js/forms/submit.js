@@ -1,6 +1,6 @@
 import { formSuccessResponse } from "../utils/modalConfig.js";
 
-function observeSuccessResponse(){
+function observeSuccessResponse() {
     const targetDiv = document.querySelector('#mce-success-response');
 
     const observer = new MutationObserver((mutationList) => {

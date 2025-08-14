@@ -10,6 +10,8 @@
     --color-red-400: oklch(70.4% 0.191 22.216);
     --color-green-100: oklch(96.2% 0.044 156.743);
     --color-sky-500: oklch(68.5% 0.169 237.323);
+    --color-slate-700: oklch(37.2% 0.044 257.287);
+    --color-slate-900: oklch(20.8% 0.042 265.755);
     --spacing: 0.25rem;
     --breakpoint-xl: 80rem;
     --container-lg: 32rem;
@@ -54,7 +56,6 @@
     --default-mono-font-family: var(--font-mono);
     --font-main: Archivo, sans-serif;
     --color-dark-blue: #011826;
-    --color-medium-blue: #042940;
     --color-light-blue: #3E6E8C;
     --color-extra-light-blue: #8AB0BF;
     --color-primary-white: #FFFFFF;
@@ -1307,6 +1308,11 @@
     overflow-y: auto;
     overscroll-behavior: contain;
   }
+  .drawer-content {
+    grid-column-start: 2;
+    grid-row-start: 1;
+    min-width: calc(0.25rem * 0);
+  }
   .filter {
     display: flex;
     flex-wrap: wrap;
@@ -1761,6 +1767,19 @@
     --tw-gradient-position: to bottom right in oklab;
     background-image: linear-gradient(var(--tw-gradient-stops));
   }
+  .bg-gradient-to-r {
+    --tw-gradient-position: to right in oklab;
+    background-image: linear-gradient(var(--tw-gradient-stops));
+  }
+  .bg-\[url\(\.\.\/\.\.\/public\/assets\/bg-mobile\.png\)\] {
+    background-image: url(../../public/assets/bg-mobile.png);
+  }
+  .bg-\[url\(\.\.\/\.\.\/public\/assets\/bg-mobile2\.png\)\] {
+    background-image: url(../../public/assets/bg-mobile2.png);
+  }
+  .bg-\[url\(\.\.\/\.\.\/public\/assets\/bg-mobile3\.png\)\] {
+    background-image: url(../../public/assets/bg-mobile3.png);
+  }
   .bg-\[url\(\.\.\/\.\.\/public\/assets\/header_image\.png\)\] {
     background-image: url(../../public/assets/header_image.png);
   }
@@ -1781,6 +1800,10 @@
     }
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
   }
+  .from-slate-700 {
+    --tw-gradient-from: var(--color-slate-700);
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
   .to-extra-light-blue {
     --tw-gradient-to: var(--color-extra-light-blue);
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
@@ -1790,6 +1813,10 @@
     @supports (color: color-mix(in lab, red, red)) {
       --tw-gradient-to: color-mix(in oklab, var(--color-extra-light-blue) 25%, transparent);
     }
+    --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .to-slate-900 {
+    --tw-gradient-to: var(--color-slate-900);
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
   }
   .bg-cover {
@@ -2140,6 +2167,11 @@
       margin-inline-end: calc(var(--spacing) * 6);
     }
   }
+  .md\:bg-\[url\(\.\.\/\.\.\/public\/assets\/header_image\.png\)\] {
+    @media (width >= 48rem) {
+      background-image: url(../../public/assets/header_image.png);
+    }
+  }
   .md\:py-8 {
     @media (width >= 48rem) {
       padding-block: calc(var(--spacing) * 8);
@@ -2205,11 +2237,6 @@
       width: calc(1/4 * 100%);
     }
   }
-  .lg\:w-1\/8 {
-    @media (width >= 64rem) {
-      width: calc(1/8 * 100%);
-    }
-  }
   .lg\:w-3\/4 {
     @media (width >= 64rem) {
       width: calc(3/4 * 100%);
@@ -2233,11 +2260,6 @@
   .lg\:w-\[14\%\] {
     @media (width >= 64rem) {
       width: 14%;
-    }
-  }
-  .lg\:w-\[20\%\] {
-    @media (width >= 64rem) {
-      width: 20%;
     }
   }
   .lg\:w-full {

@@ -14,9 +14,9 @@
     <link rel="icon" type="image/x-icon" href="./public/assets/wavy_icon.svg" />
 </head>
 
-<body class="font-main bg-primary-white">
+<body class="font-main bg-primary-white antialiased">
     <header
-        class="relative bg-[url(../../public/assets/bg-mobile3.png)] md:bg-[url(../../public/assets/header_image.png)] bg-cover bg-center bg-fixed h-[65vh] lg:h-[100vh]">
+        class="relative bg-[url(../../public/assets/header_image.png)] bg-cover bg-center bg-scroll md:bg-fixed h-[65vh] lg:h-[100vh]">
         <div data-subscription class="absolute inset-0 bg-primary-gray opacity-50"></div>
 
         <div class="relative z-10 flex flex-col items-center text-center justify-center h-full text-secondary-white">
@@ -26,7 +26,7 @@
                 <a href="index.html">
                     <img src="./public/assets/logo_white.svg" class="w-1/2 lg:w-3/5">
                 </a>
-                <a href="./public/pages/about.html" class="w-2/5 lg:w-[14%] px-8 py-2 font-medium text-xs lg:text-sm bg-dark-blue rounded-xl lg:rounded-2xl text-secondary-white
+                <a href="./public/pages/about.html" class="w-2/5 lg:w-[14%] px-8 py-2 font-medium text-[10px] lg:text-sm bg-dark-blue rounded-xl lg:rounded-2xl text-secondary-white
                     lg:hover:bg-primary-white lg:hover:text-dark-blue lg:duration-900">
                     Sobre nós!
                 </a>
@@ -78,13 +78,10 @@
         </div>
     </header>
 
-    <main class="flex flex-col gap-y-24 my-4 mx-8 lg:mx-24">
+    <main class="flex flex-col gap-y-24 my-4 mx-14 lg:mx-24">
 
-        <!-- SEÇÃO - DOR -->
-
-        <!-- Inserir pop ups -->
         <section class="flex flex-col items-center text-center justify-center lg:mx-56 h-[45vh] lg:h-screen">
-            <div class="relative flex flex-row justify-between gap-x-36 overflow-visible">
+            <div class="hidden md:relative md:flex flex-row justify-between gap-x-36 overflow-visible">
                 <div data-card-dores
                     class="hidden lg:flex opacity-0 transition-all duration-300 ease-out delay-400 cursor-pointer relative top-4 w-[45%] flex-row items-center justify-around gap-6 rounded-2xl bg-secondary-white p-4 shadow-xl">
                     <div class="relative flex z-0 items-center justify-center h-16 w-24 rounded-full bg-green-100">
@@ -109,7 +106,7 @@
                     </div>
                 </div>
             </div>
-            <h1 class="text-secondary-gray lg:px-8 text-5xl lg:text-7xl lg:font-bold">
+            <h1 class="text-secondary-gray lg:px-8 text-4xl lg:text-7xl lg:font-bold">
                 Sua previsão deveria ser uma aliada,
                 <span class="text-primary-gray">não um quebra-cabeça.</span>
             </h1>
@@ -130,10 +127,10 @@
         <section class="grid grid-cols-3 text-left h-[45vh] lg:h-[50vh]">
             <div class="col-span-3 lg:col-span-2">
                 <img src="./public/assets/wavy_icon.svg" class="w-[12%] lg:w-[5%] pb-4 lg:pb-2" data-anime="left">
-                <h1 class="text-primary-gray font-semibold text-2xl lg:text-5xl py-2" data-anime="left">
+                <h1 class="text-primary-gray font-semibold text-3xl lg:text-5xl py-2" data-anime="left">
                     A SwellGuide traduz o mar para você
                 </h1>
-                <p class="text-secondary-gray font-medium text-xl lg:text-3xl" data-anime="left">
+                <p class="text-secondary-gray font-medium text-2xl lg:text-3xl" data-anime="left">
                     Nós analisamos múltiplas fontes de dados de vento e ondulação e transformamos tudo isso em uma
                     análise clara e objetiva.
                 </p>
@@ -141,12 +138,12 @@
         </section>
 
         <!-- SEÇÃO - COMO -->
-        <section class="flex flex-col gap-y-16 items-center h-full lg:h-screen">
+        <section class="flex flex-col gap-y-16 items-center h-full lg:h-screen overflow-hidden pb-16">
             <h3 class="text-primary-gray font-light text-2xl lg:text-4xl">como funciona?</h3>
 
-            <div class="flex flex-col gap-y-8 lg:flex-row justify-around lg:gap-x-8">
+            <div class="flex flex-col items-center gap-y-8 lg:flex-row justify-around lg:gap-x-8">
 
-                <div class="w-86 h-100 bg-primary-white shadow-xl p-6 flex flex-col gap-6 rounded-2xl"
+                <div class="w-74 h-94 bg-primary-white shadow-xl p-6 flex flex-col gap-6 rounded-2xl"
                     data-anime="left">
                     <div
                         class="relative h-48 rounded-xl bg-[url(../../public/assets/pico_da_cruz-card.jpg)] overflow-hidden bg-cover bg-center">
@@ -163,7 +160,7 @@
                     </div>
                 </div>
 
-                <div class="w-86 h-100 bg-primary-white shadow-xl py-6 px-6 flex flex-col gap-6 rounded-2xl"
+                <div class="w-74 h-94 bg-primary-white shadow-xl py-6 px-6 flex flex-col gap-6 rounded-2xl"
                     data-anime="top">
                     <div
                         class="relative h-48 rounded-xl bg-[url(../../public/assets/joaquina-card.jpg)] overflow-hidden bg-cover bg-center">
@@ -180,7 +177,7 @@
                     </div>
                 </div>
 
-                <div class="w-86 h-100 bg-primary-white shadow-xl py-6 px-6 flex flex-col gap-6 rounded-2xl"
+                <div class="w-74 h-94 bg-primary-white shadow-xl py-6 px-6 flex flex-col gap-6 rounded-2xl"
                     data-anime="right">
                     <div
                         class="relative h-48 rounded-xl bg-[url(../../public/assets/header_image.png)] overflow-hidden bg-cover bg-center">
